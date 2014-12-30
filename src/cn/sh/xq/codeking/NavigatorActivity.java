@@ -33,10 +33,10 @@ public Button createStBtn;
 		this.readStBtn.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				Intent readStIntent =new Intent(NavigatorActivity.this,ReadStandardCodeActivity.class);
+				Intent readStIntent =new Intent(NavigatorActivity.this,CreateStandardCodeActivity.class);
 				startActivity(readStIntent);
 			}
-			
+
 			
 		});
 		

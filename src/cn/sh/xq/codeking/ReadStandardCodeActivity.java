@@ -35,8 +35,8 @@ public class ReadStandardCodeActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Toast.makeText(ReadStandardCodeActivity.this, "你可以扫描条形码或者二维码",
-						Toast.LENGTH_SHORT).show();
+			/*	Toast.makeText(ReadStandardCodeActivity.this, "你可以扫描条形码或者二维码",
+						Toast.LENGTH_SHORT).show();*/
 				Intent startScanIntent = new Intent(
 						ReadStandardCodeActivity.this,
 						com.zxing.activity.CaptureActivity.class);
@@ -44,6 +44,7 @@ public class ReadStandardCodeActivity extends Activity {
 			}
 		});
 	}
+	
 
 	/*
 	 * (non-Javadoc)
@@ -55,11 +56,11 @@ public class ReadStandardCodeActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
-		if (resultCode == RESULT_OK) {
+/*		if (resultCode == RESULT_OK) {
 			String result = data.getExtras().getString("result");
 			this.scanStContent.setText(result);
 		}
-
+*/
 	}
 
 }
