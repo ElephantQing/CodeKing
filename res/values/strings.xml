@@ -1,5 +1,11 @@
 <resources>
 
     <string name="app_name">CodeKing</string>
+    <string name="scan_code">Scan QR Code</string>
+    <string name="create_code">Create QR Code</string>
+    <string name="scan_qrcode_fun">Scan QR Code Function</string>
+    <string name="create_qrcode_fun">Create QR Code Function</string>
+    <string name="create_qrcode_hint">Please enter the content</string>
+    <string name="create_qrcode_contentDes">the QR Code is be created here</string>
 
 </resources>

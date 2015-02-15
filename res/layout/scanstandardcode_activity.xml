@@ -8,13 +8,13 @@
         android:id="@+id/scanStBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点击我,进行scan" />
+        android:text="@string/scan_code" />
 
     <EditText
         android:id="@+id/scanStContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" >
+        >
        <requestFocus />
     </EditText>
 

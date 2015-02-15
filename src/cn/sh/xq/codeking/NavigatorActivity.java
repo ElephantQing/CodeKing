@@ -16,8 +16,8 @@ import android.widget.Button;
  *
  */
 public class NavigatorActivity extends Activity {
-public Button readStBtn;
-public Button createStBtn;
+public Button ScanCode;
+public Button CreateCode;
 
 
 	
@@ -28,19 +28,22 @@ public Button createStBtn;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.navigator_activity);
-		this.readStBtn =(Button) findViewById(R.id.readStBtn);
-		this.createStBtn=(Button) findViewById(R.id.createStBtn);
-		this.readStBtn.setOnClickListener(new View.OnClickListener(){
+		this.ScanCode =(Button) findViewById(R.id.ScanCode);
+		this.CreateCode=(Button) findViewById(R.id.CreateCode);
+		this.ScanCode.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				Intent readStIntent =new Intent(NavigatorActivity.this,ScanStandardCodeActivity.class);
+				startActivity(readStIntent);
+			}
+		});
+		this.CreateCode.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
 				Intent readStIntent =new Intent(NavigatorActivity.this,CreateStandardCodeActivity.class);
 				startActivity(readStIntent);
 			}
-
-			
-		});
-		
-		
+		});	
 	}
 
 	/**
